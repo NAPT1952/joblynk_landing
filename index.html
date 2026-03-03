@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JobLynk.live – readiness intelligence</title>
   <!-- Font Awesome 6 (free) for clean icons -->
-  <l<script defer data-domain="joblynk.live" src="https://plausible.io/js/script.js"></script>
-   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Optional: Plausible Analytics (remove if not needed) -->
+  <script defer data-domain="joblynk.live" src="https://plausible.io/js/script.js"></script>
   <style>
     * {
       margin: 0;
@@ -337,16 +338,17 @@
         <div class="logo">JobLynk<span>.live</span></div>
         <span class="logo-tagline">AI–human performance</span>
       </div>
-           <div class="nav-links" style="display: flex; gap: 32px; align-items: center;">
+      <div class="nav-links" style="display: flex; gap: 32px; align-items: center;">
         <a href="#">platform</a>
         <a href="#">jpi</a>
         <a href="#">pricing</a>
         <a href="#"><span class="badge-teal"><i class="fas fa-shield-alt" style="margin-right: 4px;"></i> guarantee</span></a>
         <span class="btn-outline-teal">sign in</span>
         <span class="btn-solid-teal">try readiness</span>
-        <!-- Visitor counter -->
-        <div id="visitor-counter" style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; margin-left: auto; white-space: nowrap;">
-          Visitors: <span id="count">1000</span>+
+        <!-- Simple free visitor counter (like nigelthomas.live) -->
+        <div style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; margin-left: auto; white-space: nowrap;">
+          Visitors: <span id="finicount_views"></span>+
+        </div>
       </div>
     </div>
 
@@ -524,31 +526,11 @@
           <p><strong>platform</strong></p>
           <p>resume analysis · mock interview · JPI · badge</p>
         </div>
-            </footer>
+      </div>
+    </footer>
   </div>
   <div style="height: 20px;"></div>
-  <script>
-    async function updateCounter() {
-      try {
-        const response = await fetch('/api/counter');
-        const data = await response.json();
-        document.getElementById('count').innerText = data.count;
-      } catch {
-        document.getElementById('count').innerText = 1000;
-      }
-    }
-    updateCounter();
-    setInterval(updateCounter, 60000);
-  </script>
+  <!-- Simple free counter script (FiniCounter) -->
+  <script async src="//finicounter.eu.org/finicounter.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
