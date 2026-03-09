@@ -1,1 +1,9 @@
-{"type":"module","name":"joblynk","version":"1.0.0","scripts":{"dev":"vite","build":"vite build","preview":"vite preview"},"dependencies":{"react":"^19.2.3","react-dom":"^19.2.4","react-router-dom":"^7.4.1"},"devDependencies":{"@tailwindcss/postcss":"^4.2.1","@types/react":"^19.2.3","@types/react-dom":"^19.2.3","@vitejs/plugin-react":"^4.4.1","autoprefixer":"^10.4.27","postcss":"^8.5.6","tailwindcss":"^4.2.1","typescript":"^5.8.2","vite":"^6.2.5"}}
+{
+  "name": "joblynk",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
