@@ -11,14 +11,14 @@ const Home: React.FC = () => {
       backgroundAttachment: 'fixed',
       position: 'relative'
     }}>
-      {/* Semi-transparent overlay */}
+      {/* Darker overlay - change opacity to control darkness */}
       <div style={{
         position: 'absolute',
         top: 0,
         left: 0,
         right: 0,
         bottom: 0,
-        backgroundColor: 'rgba(255, 255, 255, 0.85)',
+        backgroundColor: 'rgba(0, 0, 0, 0.6)', // 60% dark overlay
         zIndex: 1
       }} />
 
@@ -53,9 +53,9 @@ const Home: React.FC = () => {
           textAlign: 'center', 
           marginTop: '0',
           marginBottom: '2rem',
-          color: '#333',
+          color: 'white',
           fontSize: '3rem',
-          textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
+          textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
         }}>
           Welcome to JobLynk
         </h1>
