@@ -2,53 +2,93 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const pages = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Pricing', path: '/pricing' },
-  { name: 'Pay Portal', path: '/payportal' },
-  { name: 'Resume Tools', path: '/resumetools' },
-  { name: 'Employees Data', path: '/employersdata' },
-  { name: 'Sign Up', path: '/signup' },
-  { name: 'Support', path: '/support' },
-  { name: 'Disclaimer', path: '/disclaimer' },
+  { name: 'HOME', path: '/' },
+  { name: 'ABOUT', path: '/about' },
+  { name: 'PRICING', path: '/pricing' },
+  { name: 'PAY PORTAL', path: '/payportal' },
+  { name: 'RESUME TOOLS', path: '/resumetools' },
+  { name: 'EMPLOYEES DATA', path: '/employersdata' },
+  { name: 'SIGN UP', path: '/signup' },
+  { name: 'SUPPORT', path: '/support' },
+  { name: 'DISCLAIMER', path: '/disclaimer' },
 ];
 
 const BrainGrid: React.FC = () => {
-  console.log('🔥 BrainGrid is rendering!');
-  
   return (
     <div style={{
       position: 'fixed',
-      left: '0',
-      top: '0',
-      width: '150px',
-      height: '100vh',
-      backgroundColor: '#1a1a2e',
+      left: 0,
+      top: 0,
+      bottom: 0,
+      width: '180px',
+      backgroundColor: '#0f172a',
+      borderRight: '4px solid #ffc107',
       padding: '20px 10px',
-      overflowY: 'auto',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
       zIndex: 9999,
-      borderRight: '3px solid gold'
+      overflowY: 'auto'
     }}>
-      <h3 style={{ color: 'white', textAlign: 'center', marginBottom: '20px' }}>MENU</h3>
-      {pages.map((page) => (
-        <Link
-          to={page.path}
-          key={page.name}
-          style={{
-            display: 'block',
-            textDecoration: 'none',
-            color: 'white',
-            marginBottom: '15px',
-            padding: '10px',
-            backgroundColor: '#16213e',
-            borderRadius: '8px',
-            textAlign: 'center',
-            border: '1px solid #ffc107'
-          }}
-        >
-          <div style={{ fontSize: '14px', fontWeight: 'bold' }}>{page.name}</div>
-        </Link>
-      ))}
+      {/* Title at top */}
+      <div style={{ marginBottom: '20px', textAlign: 'center' }}>
+        <h2 style={{ color: '#ffc107', fontSize: '18px', margin: 0 }}>MENU</h2>
+        <div style={{ height: '2px', width: '40px', background: '#ffc107', margin: '5px auto' }}></div>
+      </div>
+
+      {/* 9 BIG BUTTONS - full height distribution */}
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        flex: 1,
+        gap: '8px'
+      }}>
+        {pages.map((page) => (
+          <Link
+            to={page.path}
+            key={page.name}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              textDecoration: 'none',
+              backgroundColor: '#1e293b',
+              color: 'white',
+              padding: '15px 5px',
+              borderRadius: '12px',
+              fontWeight: 'bold',
+              fontSize: '14px',
+              letterSpacing: '0.5px',
+              border: '2px solid #ffc107',
+              boxShadow: '0 4px 6px rgba(0,0,0,0.3)',
+              transition: 'all 0.2s',
+              flex: 1,
+              minHeight: '45px',
+              textAlign: 'center'
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = '#ffc107';
+              e.currentTarget.style.color = '#0f172a';
+              e.currentTarget.style.transform = 'scale(1.02)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = '#1e293b';
+              e.currentTarget.style.color = 'white';
+              e.currentTarget.style.transform = 'scale(1)';
+            }}
+          >
+            {page.name}
+          </Link>
+        ))}
+      </div>
+
+      {/* AI/BM at bottom */}
+      <div style={{ marginTop: '20px', textAlign: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '15px' }}>
+          <span style={{ color: '#ffc107', fontWeight: 'bold' }}>AI</span>
+          <span style={{ color: '#ffc107', fontWeight: 'bold' }}>BM</span>
+        </div>
+      </div>
     </div>
   );
 };
