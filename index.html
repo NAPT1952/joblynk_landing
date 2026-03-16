@@ -2,18 +2,105 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LDB7E245Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9LDB7E245Y');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LDB7E245Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9LDB7E245Y');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JOBSLINKED.live</title>
+    <style>
+      .brain-fix {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999999;
+        background: #0f172a;
+        padding: 20px 40px;
+        border-radius: 30px;
+        border: 4px solid #ffc107;
+        box-shadow: 0 0 50px gold;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        animation: float 3s infinite;
+      }
+      .brain-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .brain-image {
+        width: 100px;
+        height: 100px;
+        background: #ffc107;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+        border: 3px solid white;
+      }
+      .brain-text {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .brain-subtext {
+        color: #ffc107;
+        font-size: 16px;
+      }
+      .brain-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .brain-button-primary {
+        background: #ffc107;
+        color: #000;
+        padding: 8px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+      .brain-button-secondary {
+        border: 2px solid #ffc107;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        background: transparent;
+        cursor: pointer;
+      }
+      @keyframes float {
+        0% { transform: translateX(-50%) translateY(0px); }
+        50% { transform: translateX(-50%) translateY(-10px); }
+        100% { transform: translateX(-50%) translateY(0px); }
+      }
+    </style>
   </head>
   <body>
+    <!-- BRAIN FIX - ALWAYS VISIBLE -->
+    <div class="brain-fix">
+      <div class="brain-container">
+        <div class="brain-image">
+          🧠
+        </div>
+        <div class="brain-text">Welcome to JobLynk</div>
+        <div class="brain-subtext">Connect with India's Top Employers</div>
+        <div class="brain-buttons">
+          <a href="/pay" class="brain-button-primary">Get Started</a>
+          <a href="/builder" class="brain-button-secondary">Build Resume</a>
+        </div>
+      </div>
+    </div>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
