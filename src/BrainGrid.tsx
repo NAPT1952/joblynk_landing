@@ -8,7 +8,7 @@ const pages = [
   { name: 'Pricing', path: '/pricing' },
   { name: 'Pay Portal', path: '/payportal' },
   { name: 'Resume Tools', path: '/resumetools' },
-  { name: 'Employers Data', path: '/employersdata' },
+  { name: 'Employees Data', path: '/employersdata' },
   { name: 'Sign Up', path: '/signup' },
   { name: 'Support', path: '/support' },
   { name: 'Disclaimer', path: '/disclaimer' },
@@ -21,16 +21,28 @@ const BrainGrid: React.FC = () => {
         {pages.map((page) => (
           <Link to={page.path} key={page.name} className="brain-card">
             <div className="brain-icon">
-              {/* REPLACED SVG with actual brain.jpg image */}
+              {/* REPLACE the SVG with actual image */}
               <img 
                 src="/public/images/brain.jpg" 
                 alt={page.name}
-                width="80" 
-                height="80"
-                style={{
-                  objectFit: 'cover',
-                  borderRadius: '12px',
-                  border: '2px solid #ffc107'
+                onError={(e) => {
+                  // If image fails to load, show a colored box with text
+                  e.currentTarget.style.display = 'none';
+                  const parent = e.currentTarget.parentElement;
+                  if (parent) {
+                    const fallback = document.createElement('div');
+                    fallback.style.width = '70px';
+                    fallback.style.height = '70px';
+                    fallback.style.backgroundColor = '#ffc107';
+                    fallback.style.borderRadius = '12px';
+                    fallback.style.display = 'flex';
+                    fallback.style.alignItems = 'center';
+                    fallback.style.justifyContent = 'center';
+                    fallback.style.color = '#333';
+                    fallback.style.fontWeight = 'bold';
+                    fallback.innerText = page.name.charAt(0);
+                    parent.appendChild(fallback);
+                  }
                 }}
               />
             </div>
