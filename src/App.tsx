@@ -1,25 +1,27 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import BrainGrid from './BrainGrid';
-import Home from './pages/Home';
-import About from './pages/About';
-import Pricing from './pages/Pricing';
-import PayPortal from './pages/PayPortal';
-import ResumeTools from './pages/ResumeTools';
-import EmployersData from './pages/EmployersData';
-import SignUp from './pages/SignUp';
-import Support from './pages/Support';
-import Disclaimer from './pages/Disclaimer';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import BrainGrid from "./BrainGrid";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Pricing from "./pages/Pricing";
+import PayPortal from "./payportal";
+import ResumeTools from "./resumebuilder";
+import EmployersData from "./employerportal";
+import SignUp from "./samplesvault";
+import Support from "./pages/Support";
+import Disclaimer from "./disclaimer";
 
 function App() {
-  console.log('🚀 App is rendering');
-  
   return (
     <Router>
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', minHeight: '100vh' }}>
         <BrainGrid />
-        <div style={{ 
-          marginLeft: '150px', 
-          width: 'calc(100% - 150px)',
+        <main style={{ 
+          flex: 1, 
+          marginLeft: '180px',
+          width: 'calc(100% - 180px)',
+          overflowX: 'hidden',
+          backgroundColor: '#f8fafc',
           padding: '20px'
         }}>
           <Routes>
@@ -33,7 +35,7 @@ function App() {
             <Route path="/support" element={<Support />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
           </Routes>
-        </div>
+        </main>
       </div>
     </Router>
   );
