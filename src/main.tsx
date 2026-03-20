@@ -1,18 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
 
-console.log("MAIN LOADED ✅");
-
-const rootElement = document.getElementById('root');
-
-if (!rootElement) {
-  console.error("ROOT NOT FOUND ❌");
-} else {
-  console.log("ROOT FOUND ✅");
-}
-
-const root = ReactDOM.createRoot(rootElement!);
-
-root.render(
-  <h1 style={{ color: "red" }}>FORCE RENDER 🔥</h1>
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
