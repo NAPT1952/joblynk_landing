@@ -62,7 +62,7 @@ const About = () => {
       {/* Contact */}
       <div style={{ marginTop: "40px" }}>
         <h3>📞 We're Here to Help</h3>
-        <p>tech-joblybklive@gmail.com</p>
+        <p>tech-joblynklive@gmail.com</p>
       </div>
     </div>
   );
