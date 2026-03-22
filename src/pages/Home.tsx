@@ -38,6 +38,37 @@ const Home = () => {
             zIndex: 2,
           }}
         />
+        <div
+  style={{
+    height: "100vh",
+    position: "relative",
+  }}
+>
+  {/* Background */}
+  <div style={{ ... }}></div>
+
+  {/* Overlay */}
+  <div style={{ ... }}></div>
+
+  {/* ✅ EMBLEM GOES HERE */}
+  <img
+    src={emblem}
+    alt="logo"
+    style={{
+      position: "absolute",
+      top: "20px",
+      left: "20px",
+      width: "60px",
+      zIndex: 4,
+      borderRadius: "10px",
+    }}
+  />
+
+  {/* Hero Content */}
+  <div style={{ zIndex: 3 }}>
+    ...
+  </div>
+</div>
 
         {/* Hero Content */}
         <div
