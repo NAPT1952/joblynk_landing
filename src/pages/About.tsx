@@ -1,12 +1,15 @@
-import React from "react";
+import React from 'react';
 
 const About = () => {
   return (
-    <div style={{ padding: "40px" }}>
-      <h1>About JobLynk</h1>
-      <p>This is the About page.</p>
-    </div>
-  );
-};
+    <div style={{
+      padding: '60px 20px',
+      maxWidth: '900px',
+      margin: '0 auto',
+      fontFamily: 'Arial'
+    }}>
+      <h1 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>
+        About JobLynk.live
+      </h1>
 
-export default About;
+      <
