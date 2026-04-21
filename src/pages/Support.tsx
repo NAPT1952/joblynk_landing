@@ -1,68 +1,38 @@
-﻿import React, { useState } from 'react';
+﻿import React from 'react';
 
-const Support: React.FC = () => {
-  const [formData, setFormData] = useState({ name: '', celNumber: '', email: '', body: '' });
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!formData.name || !formData.celNumber || !formData.email || !formData.body) {
-      setError('Please fill in all fields');
-      return;
-    }
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setFormData({ name: '', celNumber: '', email: '', body: '' });
-    setError('');
-  };
-
+const Support = () => {
   return (
-    <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '2rem' }}>
-      <h1>Support & Contact</h1>
+    <div style={{ padding: '80px 10%', color: 'white', maxWidth: '900px', margin: '0 auto' }}>
+      <h1 style={{ color: '#fbbf24', borderBottom: '2px solid #fbbf24', paddingBottom: '10px' }}>Support Center</h1>
+      <p style={{ color: '#94a3b8', fontSize: '1.1rem', marginBottom: '40px' }}>
+        For technical assistance, payment inquiries, or data package support, please contact our team.
+      </p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '3rem' }}>
-        {/* Nigel's Card */}
-        <div style={{ background: '#f5f7fa', padding: '2rem', borderRadius: '12px' }}>
-          <h2 style={{ color: '#007bff' }}>🌐 Web Master</h2>
-          <h3>Nigel Thomas</h3>
-          <p>📧 joblynklive@gmail.com</p>
-          <p>📞 +91 97693 51231</p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
+        {/* Executive Desk */}
+        <div style={{ padding: '30px', border: '1px solid #333', borderRadius: '15px', background: 'rgba(255,255,255,0.02)' }}>
+          <h3 style={{ color: '#fbbf24', marginTop: 0 }}>Executive Desk</h3>
+          <p><strong>Nigel Anthony Thomas</strong></p>
+          <p>Phone: +91 97693 51231</p>
+          <p>Email: joblynklive@gmail.com</p>
+          <p style={{ fontSize: '0.8rem', color: '#666' }}>Web Design & Strategy</p>
         </div>
 
-        {/* Das's Card */}
-        <div style={{ background: '#d4edda', padding: '2rem', borderRadius: '12px' }}>
-          <h2 style={{ color: '#28a745' }}>💾 Data Engineer</h2>
-          <h3>Das</h3>
-          <p>📧 Das8369372112@gmail.com</p>
-          <p>📞 +91 83693 72112</p>
+        {/* Technical Support */}
+        <div style={{ padding: '30px', border: '1px solid #333', borderRadius: '15px', background: 'rgba(255,255,255,0.02)' }}>
+          <h3 style={{ color: '#fbbf24', marginTop: 0 }}>Candidate Support</h3>
+          <p><strong>Das Suburaj</strong></p>
+          <p>Phone: +91 83693 72112</p>
+          <p>Email: das8369372112@gmail.com</p>
+          <p style={{ fontSize: '0.8rem', color: '#666' }}>Data & Fulfillment</p>
         </div>
       </div>
 
-      <div style={{ background: '#e8f4fd', padding: '1rem', borderRadius: '8px', marginBottom: '2rem', textAlign: 'center' }}>
-        ⏱️ <strong>24-Hour Response Guarantee:</strong> We'll respond within 24 hours
+      <div style={{ marginTop: '50px', padding: '20px', background: 'rgba(251, 191, 36, 0.05)', borderRadius: '10px', border: '1px dashed #fbbf24' }}>
+        <p style={{ textAlign: 'center', margin: 0, fontSize: '0.9rem' }}>
+          Response Time: We typically respond to all inquiries within 4 to 6 business hours.
+        </p>
       </div>
-
-      {submitted ? (
-        <div style={{ background: '#d4edda', padding: '2rem', borderRadius: '8px', textAlign: 'center' }}>
-          <h3>✅ Thank You!</h3>
-          <p>Your message has been sent. We'll respond within 24 hours.</p>
-          <button onClick={() => setSubmitted(false)}>Send Another</button>
-        </div>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          {error && <div style={{ background: '#f8d7da', padding: '1rem', borderRadius: '8px', marginBottom: '1rem' }}>⚠️ {error}</div>}
-          <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required style={{ width: '100%', padding: '0.75rem', marginBottom: '1rem' }} />
-          <input type="tel" name="celNumber" placeholder="Cell Number" value={formData.celNumber} onChange={handleChange} required style={{ width: '100%', padding: '0.75rem', marginBottom: '1rem' }} />
-          <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required style={{ width: '100%', padding: '0.75rem', marginBottom: '1rem' }} />
-          <textarea name="body" placeholder="Message" value={formData.body} onChange={handleChange} required rows={5} style={{ width: '100%', padding: '0.75rem', marginBottom: '1rem' }} />
-          <button type="submit" style={{ background: '#007bff', color: 'white', padding: '1rem', width: '100%' }}>Send Message</button>
-        </form>
-      )}
     </div>
   );
 };
