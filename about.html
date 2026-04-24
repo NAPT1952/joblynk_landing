@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About JobLynk.live</title>
+    <title>About JobLynk.live – Bridging Jobs & Talent</title>
+    <meta name="description" content="JobLynk.live helps candidates find executive jobs, provides tailored resume + cover letter services, daily HR leads, and connects employers with pre‑screened talent.">
+    <meta name="google-adsense-account" content="ca-pub-4282121192943910">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
     <style>
         *{margin:0;padding:0;box-sizing:border-box;}
@@ -11,15 +13,31 @@
         .navbar{background:#0f2b3d;padding:1rem 0;position:sticky;top:0;z-index:1000;}
         .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;flex-wrap:wrap;}
         .logo{color:white;font-size:1.5rem;font-weight:bold;text-decoration:none;}
-        .nav-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
-        .nav-links a{color:white;text-decoration:none;padding:8px 16px;border-radius:8px;}
+        .nav-links{display:flex;gap:1rem;flex-wrap:wrap;}
+        .nav-links a{color:white;text-decoration:none;padding:8px 16px;border-radius:8px;transition:background 0.3s;}
         .nav-links a:hover{background:#2c7da0;}
-        .container{max-width:1000px;margin:2rem auto;padding:0 20px;}
-        .content-card{background:white;border-radius:20px;padding:2rem;box-shadow:0 8px 30px rgba(0,0,0,0.08);}
-        h1{color:#0f2b3d;margin-bottom:1rem;}
+        .page-header{background:linear-gradient(135deg,#0f2b3d,#1e4a6e);color:white;padding:2rem;text-align:center;}
+        .page-header h1{font-size:2rem;margin-bottom:0.5rem;}
+        .container{max-width:1100px;margin:2rem auto;padding:0 20px;}
+        .content-card{background:white;border-radius:24px;padding:2rem;box-shadow:0 8px 30px rgba(0,0,0,0.08);margin-bottom:2rem;}
+        h2{color:#1e4a6e;margin:1rem 0 0.5rem;border-left:4px solid #2c7da0;padding-left:1rem;}
+        .highlight{background:#eef4ff;padding:1.2rem;border-radius:16px;margin:1rem 0;}
+        .packages-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin:1.5rem 0;}
+        .package-card{background:linear-gradient(135deg,#f8fafc,#ffffff);border-radius:20px;padding:1.8rem;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.08);transition:transform 0.3s;border-top:5px solid #2c7da0;}
+        .package-card:hover{transform:translateY(-5px);}
+        .package-card h3{font-size:1.5rem;color:#0f2b3d;margin-bottom:0.5rem;}
+        .package-price{font-size:2.2rem;font-weight:bold;color:#1e4a6e;margin:0.5rem 0;}
+        .package-price span{font-size:1rem;font-weight:normal;color:#666;}
+        .package-features{list-style:none;padding:0;margin:1rem 0;text-align:left;}
+        .package-features li{margin:0.5rem 0;padding-left:1.5rem;position:relative;}
+        .package-features li:before{content:"✓";color:#2c7da0;position:absolute;left:0;font-weight:bold;}
+        .btn-purchase{display:inline-block;background:#2c7da0;color:white;padding:12px 30px;border-radius:40px;text-decoration:none;font-weight:bold;margin-top:1rem;transition:background 0.3s;}
+        .btn-purchase:hover{background:#1e4a6e;}
+        .btn-gold{background:#d4a017;}
+        .btn-gold:hover{background:#b8860b;}
         .footer{background:#0f1a24;color:#8899aa;text-align:center;padding:2rem;margin-top:2rem;}
-        .footer a{color:#8899aa;margin:0 0.5rem;}
-        @media(max-width:768px){.nav-container{flex-direction:column;gap:10px;}.nav-links{justify-content:center;}}
+        .footer a{color:#8899aa;margin:0 0.5rem;text-decoration:none;}
+        @media(max-width:768px){.nav-container{flex-direction:column;gap:10px;}}
     </style>
 </head>
 <body>
@@ -29,6 +47,8 @@
             <div class="nav-links">
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
+                <a href="/packages.html">Packages</a>
+                <a href="/hotel-sop-manual.html">SOP Manual</a>
                 <a href="/contact.html">Contact</a>
                 <a href="/support.html">Support</a>
                 <a href="/privacy.html">Privacy</a>
@@ -36,19 +56,94 @@
             </div>
         </div>
     </nav>
+
+    <div class="page-header">
+        <h1>About JobLynk.live</h1>
+        <p>Your Partner in Executive Career Growth & Talent Acquisition</p>
+    </div>
+
     <div class="container">
         <div class="content-card">
-            <h1>About JobLynk.live</h1>
-            <p>JobLynk.live is a premier digital platform dedicated to bridging the gap between executive talent and career opportunities in the hospitality and maritime industries across India, the Middle East, and international markets.</p>
-            <p style="margin-top:1rem;">Founded by hospitality executive Nigel Thomas, our mission is to provide Indian professionals with comprehensive career guides, industry insights, salary benchmarks, and direct connections to top employers.</p>
-            <p style="margin-top:1rem;">We cover 14 executive sectors including Cruise Line Operations, Luxury Hotels, Middle East Hospitality, F&B Management, Front Office, Housekeeping, Culinary Arts, Revenue Management, HR, Engineering, Maritime Deck & Engine, Wellness, and Retail & Casino.</p>
+            <h2>🎯 Our Mission</h2>
+            <p>JobLynk.live is a premier digital platform dedicated to bridging the gap between <strong>executive talent</strong> and <strong>career opportunities</strong> in the hospitality and maritime industries across India, the Middle East, and international markets. We believe finding the right job – or the right candidate – should be transparent, efficient, and empowering.</p>
+        </div>
+
+        <div class="content-card">
+            <h2>💰 Career Booster Packages</h2>
+            <p>Choose the package that fits your needs. One-time payment. No subscriptions.</p>
+            
+            <div class="packages-container">
+                <!-- WHITE PACKAGE -->
+                <div class="package-card">
+                    <h3>⚪ White Package</h3>
+                    <div class="package-price">₹49 <span>/ one-time</span></div>
+                    <ul class="package-features">
+                        <li>Tailored Resume + Cover Letter</li>
+                        <li>20+ HR / Employer Contacts</li>
+                        <li>Valid for 4 weeks</li>
+                        <li>Email & WhatsApp Support</li>
+                    </ul>
+                    <a href="https://wa.me/919769351231?text=I%20want%20White%20Package%20₹49" class="btn-purchase" target="_blank">📲 Order on WhatsApp →</a>
+                </div>
+
+                <!-- GOLD PACKAGE -->
+                <div class="package-card">
+                    <h3>🌟 Gold Package</h3>
+                    <div class="package-price">₹99 <span>/ one-time</span></div>
+                    <ul class="package-features">
+                        <li>Everything in White Package</li>
+                        <li><strong>20+ NEW Leads Daily (Mon-Fri)</strong></li>
+                        <li><strong>5 Days of Fresh Data</strong></li>
+                        <li>Priority Resume Review (24h)</li>
+                        <li>Direct HR Contacts (Emails & Phones)</li>
+                    </ul>
+                    <a href="https://wa.me/919769351231?text=I%20want%20Gold%20Package%20₹99" class="btn-purchase btn-gold" target="_blank">📲 Order on WhatsApp →</a>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top:0.5rem;">📞 <strong>Pay once. Get tailored resume + 5 days of fresh HR/employer data delivered to your WhatsApp.</strong></p>
+        </div>
+
+        <div class="content-card">
+            <h2>👨‍💼 For Job Seekers & Candidates</h2>
+            <p>Whether you're a fresh graduate, a mid‑level professional, or a seasoned executive, JobLynk.live provides you with the tools and intelligence to accelerate your career:</p>
+            <ul style="margin-left:1.5rem; margin-top:0.5rem;">
+                <li><strong>📘 14 Executive Sector Guides</strong> – Detailed career paths, salary benchmarks, top recruiters, and required certifications.</li>
+                <li><strong>✍️ Tailored Resume + Cover Letter</strong> – Customized to YOUR skill set, experience level, and target industry. We don't use templates – every document is built from scratch for you.</li>
+                <li><strong>📊 Daily HR / Employer Leads</strong> – Get 20+ verified contacts (emails, phone numbers, WhatsApp) every weekday (Mon-Fri).</li>
+                <li><strong>🏨 Free Industry Resources</strong> – Hotel SOP Manual, interview tips, and skill development guides.</li>
+            </ul>
+            <div class="highlight">⭐ Over 200+ candidates have landed interviews using our resume services and HR leads. You could be next.</div>
+        </div>
+
+        <div class="content-card">
+            <h2>🏢 For HR Professionals & Employers</h2>
+            <ul style="margin-left:1.5rem;">
+                <li><strong>Direct Access to Active Candidates</strong> – We share your openings with our candidate network (free for verified employers).</li>
+                <li><strong>Verified HR Data</strong> – Daily lead lists help you benchmark your outreach.</li>
+                <li><strong>Partnership Opportunities</strong> – List your vacancies on our platform to reach thousands of hospitality professionals.</li>
+            </ul>
+            <p>Interested? <a href="/contact.html">Contact us</a> for bulk recruitment solutions.</p>
+        </div>
+
+        <div class="content-card">
+            <h2>🤝 Free & Paid Resources</h2>
+            <ul style="margin-left:1.5rem;">
+                <li><strong>🆓 Free</strong> – 14 sector career guides, SOP manual, basic job search articles.</li>
+                <li><strong>💎 Paid Packages</strong> – White (₹49) and Gold (₹99) give you tailored resume writing, cover letters, and 5 days of fresh HR leads delivered to WhatsApp.</li>
+            </ul>
+            <p>No subscriptions. No hidden fees. Pay once, get results.</p>
+        </div>
+
+        <div class="content-card">
+            <h2>📞 Let's Talk</h2>
+            <p>📧 <a href="mailto:joblynklive@gmail.com">joblynklive@gmail.com</a> | 📱 WhatsApp: <a href="https://wa.me/919769351231">+91 9769351231</a></p>
+            <p><a href="/contact.html" style="display:inline-block; background:#2c7da0; color:white; padding:10px 20px; border-radius:30px; text-decoration:none; margin-top:1rem;">Contact Us →</a></p>
         </div>
     </div>
+
     <div class="footer">
         <p>© 2025 JobLynk.live – Bridging Jobs & Talent</p>
-        <p><a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a> | <a href="/contact.html">Contact</a></p>
+        <p><a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a> | <a href="/refund.html">Refund</a> | <a href="/contact.html">Contact</a></p>
     </div>
 </body>
 </html>
-
-
