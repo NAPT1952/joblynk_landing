@@ -1,65 +1,368 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us – JobLynk.live</title>
+    <title>Contact JobLynk.live | Job Platform</title>
+    <meta name="description" content="Contact JobLynk.live - Reach out for job inquiries, partnerships, or support.">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQLVPTR6EB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WQLVPTR6EB');
+    </script>
+    
+    <!-- Google AdSense -->
     <meta name="google-adsense-account" content="ca-pub-4282121192943910">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"
+    crossorigin="anonymous"></script>
+    
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;}
-        body{font-family:'Segoe UI',Roboto,sans-serif;background:#f0f4f8;color:#1a2a3a;line-height:1.6;}
-        .navbar{background:#0f2b3d;padding:1rem 0;position:sticky;top:0;z-index:1000;}
-        .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;flex-wrap:wrap;}
-        .logo{color:white;font-size:1.5rem;font-weight:bold;text-decoration:none;}
-        .nav-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
-        .nav-links a{color:white;text-decoration:none;padding:8px 16px;border-radius:8px;}
-        .nav-links a:hover{background:#2c7da0;}
-        .container{max-width:800px;margin:2rem auto;padding:0 20px;}
-        .content-card{background:white;border-radius:20px;padding:2rem;box-shadow:0 8px 30px rgba(0,0,0,0.08);}
-        h1{color:#0f2b3d;margin-bottom:1rem;}
-        .contact-info{margin:1.5rem 0;}
-        .contact-item{padding:0.8rem;border-bottom:1px solid #eef4ff;}
-        .contact-item strong{display:inline-block;width:140px;color:#1e4a6e;}
-        .whatsapp-btn{display:inline-block;background:#25D366;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;margin-top:1rem;}
-        .footer{background:#0f1a24;color:#8899aa;text-align:center;padding:2rem;margin-top:2rem;}
-        .footer a{color:#8899aa;margin:0 0.5rem;text-decoration:none;}
-        @media(max-width:768px){.nav-container{flex-direction:column;gap:10px;}.nav-links{justify-content:center;}.contact-item strong{width:auto;display:block;}}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0a2b3b, #1a4a6e);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .nav {
+            background: #0f3b5c;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .nav a:hover {
+            background: #2c7da0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .contact-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .contact-card h2 {
+            color: #0a2b3b;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #2c7da0;
+            padding-left: 1rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        
+        .info-icon {
+            font-size: 1.8rem;
+            width: 50px;
+            text-align: center;
+        }
+        
+        .info-content {
+            flex: 1;
+        }
+        
+        .info-label {
+            font-size: 0.8rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .info-value {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .info-value a {
+            color: #1a4a6e;
+            text-decoration: none;
+        }
+        
+        .info-value a:hover {
+            text-decoration: underline;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #1a4a6e;
+            box-shadow: 0 0 0 3px rgba(26,74,110,0.1);
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        button {
+            background: #0a2b3b;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+        
+        button:hover {
+            background: #1a4a6e;
+        }
+        
+        .success-message, .error-message {
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .footer {
+            background: #0a2b3b;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .footer a {
+            color: #7ab3c8;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            .contact-card {
+                padding: 1.25rem;
+            }
+            .nav a {
+                margin: 0 0.5rem;
+                font-size: 0.9rem;
+            }
+            .info-row {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="logo">JobLynk.live</a>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/contact.html">Contact</a>
-                <a href="/support.html">Support</a>
-                <a href="/privacy.html">Privacy</a>
-                <a href="/terms.html">Terms</a>
-            </div>
-        </div>
-    </nav>
+    <div class="header">
+        <h1>Contact JobLynk.live</h1>
+        <p>We're here to help you find your next opportunity</p>
+    </div>
+    
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+    
     <div class="container">
-        <div class="content-card">
-            <h1>Contact Us</h1>
-            <p>Have questions about career opportunities, partnerships, or need assistance? Reach out to us using the information below.</p>
+        <div class="contact-card">
+            <h2>📬 Get in Touch</h2>
+            
             <div class="contact-info">
-                <div class="contact-item"><strong>📧 General Inquiries:</strong> joblynklive@gmail.com</div>
-                <div class="contact-item"><strong>📧 HR / Recruitment:</strong> napt1952@gmail.com</div>
-                <div class="contact-item"><strong>📧 HR / Recruitment:</strong> restgenmgr1952@gmail.com</div>
-                <div class="contact-item"><strong>📞 Phone:</strong> +91 9769351231</div>
-                <div class="contact-item"><strong>💬 WhatsApp:</strong> +91 9769351231</div>
+                <div class="info-row">
+                    <div class="info-icon">📧</div>
+                    <div class="info-content">
+                        <div class="info-label">Email</div>
+                        <div class="info-value">
+                            <a href="mailto:joblynklive@gmail.com">joblynklive@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-icon">📱</div>
+                    <div class="info-content">
+                        <div class="info-label">Phone / WhatsApp</div>
+                        <div class="info-value">
+                            <a href="tel:+919769351231">+91 9769351231</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-row">
+                    <div class="info-icon">💼</div>
+                    <div class="info-content">
+                        <div class="info-label">HR / Recruitment</div>
+                        <div class="info-value">
+                            <a href="mailto:napt1952@gmail.com">napt1952@gmail.com</a> | 
+                            <a href="mailto:restgenmgr1952@gmail.com">restgenmgr1952@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="https://wa.me/919769351231" class="whatsapp-btn" target="_blank">💬 Chat on WhatsApp</a>
-            <p style="margin-top:1.5rem; color:#666;">Response time: Usually within 24-48 hours.</p>
+        </div>
+        
+        <div class="contact-card">
+            <h2>✉️ Send a Message</h2>
+            
+            <div id="successMessage" class="success-message">✅ Thank you! Your message has been sent. We'll respond within 24-48 hours.</div>
+            <div id="errorMessage" class="error-message">❌ Something went wrong. Please try again or email us directly.</div>
+            
+            <form id="contactForm" action="https://formspree.io/f/xqapwkrb" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="Job Inquiry">Job Inquiry</option>
+                        <option value="Partnership">Partnership Opportunity</option>
+                        <option value="Support">Technical Support</option>
+                        <option value="General">General Question</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </div>
+    
     <div class="footer">
-        <p>© 2025 JobLynk.live – Bridging Jobs & Talent</p>
-        <p><a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a> | <a href="/contact.html">Contact</a> | <a href="/support.html">Support</a></p>
+        <p>© 2026 JobLynk.live | Bridging talent and opportunity</p>
+        <p><a href="/privacy.html">Privacy Policy</a> | <a href="/contact">Contact</a></p>
     </div>
+    
+    <script>
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('successMessage');
+        const errorMsg = document.getElementById('errorMessage');
+        
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+            
+            const formData = new FormData(form);
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+                
+                if (response.ok) {
+                    successMsg.style.display = 'block';
+                    form.reset();
+                } else {
+                    errorMsg.style.display = 'block';
+                }
+            } catch (error) {
+                errorMsg.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
-
