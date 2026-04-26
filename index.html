@@ -65,11 +65,6 @@
       color: #f5c842;
       letter-spacing: 2px;
     }
-    .section-sub {
-      text-align: center;
-      color: #8aadcc;
-      margin-bottom: 2rem;
-    }
     .sectors-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -224,18 +219,18 @@
       transform: scale(1.02);
     }
 
-    /* ===== SOCIAL HUB ===== */
+    /* ===== SOCIAL HUB - CLEAN & SINGLE INSTANCE ===== */
     .social-hub {
-      background: rgba(8, 18, 28, 0.8);
+      background: rgba(8, 18, 28, 0.9);
       backdrop-filter: blur(12px);
       border-radius: 2rem;
       padding: 2rem;
-      border: 1px solid rgba(245,200,66,0.3);
+      border: 1px solid rgba(245,200,66,0.35);
       margin: 2rem 0;
     }
     .hub-header {
       text-align: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.8rem;
     }
     .hub-header h2 {
       font-size: 1.8rem;
@@ -243,6 +238,13 @@
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
+      letter-spacing: 2px;
+    }
+    .hub-header .sub {
+      font-size: 0.7rem;
+      color: #bcd0f0;
+      letter-spacing: 2px;
+      margin-top: 5px;
     }
     .social-grid {
       display: flex;
@@ -261,10 +263,12 @@
       text-decoration: none;
       color: inherit;
       transition: all 0.2s;
+      min-width: 160px;
     }
     .social-card:hover {
       background: rgba(245,200,66,0.15);
       transform: translateX(4px);
+      border-color: rgba(245,200,66,0.6);
     }
     .social-icon-sm {
       width: 36px;
@@ -274,24 +278,30 @@
       justify-content: center;
       border-radius: 50%;
       font-size: 1.2rem;
+      flex-shrink: 0;
     }
     .social-info-sm h3 {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #fff5e6;
+      margin: 0;
     }
     .social-info-sm p {
       font-size: 0.6rem;
       color: #bdd4f0;
+      margin: 2px 0 0;
     }
 
     .hashtag {
       text-align: center;
-      margin-top: 1.5rem;
+      margin-top: 1.8rem;
       font-family: monospace;
       color: #f5c842;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      word-break: keep-all;
+      flex-wrap: wrap;
     }
- 
+
     /* Footer */
     .footer {
       text-align: center;
@@ -305,6 +315,8 @@
       .sectors-grid { grid-template-columns: 1fr; }
       .feature-row { flex-direction: column; }
       .leader-title { font-size: 32px; }
+      .social-grid { flex-direction: column; align-items: stretch; }
+      .social-card { justify-content: center; }
     }
   </style>
 </head>
@@ -317,7 +329,7 @@
 </div>
 
 <div class="container">
-  <!-- JOB SECTORS (Your existing content) -->
+  <!-- JOB SECTORS -->
   <h2 class="section-title">📌 Select Your Executive Sector</h2>
   <div class="sectors-grid">
     <div class="sector-card"><span class="sector-icon">🚢</span><div><div class="sector-name">Cruise Line Operations</div><div class="sector-desc">Complete career guide for Indian seafarers</div></div></div>
@@ -336,9 +348,8 @@
     <div class="sector-card"><span class="sector-icon">🛍️</span><div><div class="sector-name">Retail & Casino</div><div class="sector-desc">Hotel retail, duty-free, casino ops</div></div></div>
   </div>
 
-  <!-- LEADER + CAREER SECTION (NEW) -->
+  <!-- LEADER + CAREER SECTION -->
   <div class="feature-row">
-    <!-- Left: Leader Poster -->
     <div class="feature-card">
       <div class="leader-inner">
         <div class="mini-corner tl"></div>
@@ -355,8 +366,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Right: Career Motivation Card -->
     <div class="feature-card">
       <div class="career-inner">
         <div class="career-title">Elevate Your Career<br>in 2024!</div>
@@ -374,65 +383,39 @@
     </div>
   </div>
 
-  <!-- SOCIAL LINKS HUB -->
+  <!-- SOCIAL HUB - CLEAN, ONE INSTANCE EACH, ALL INSIDE FRAME -->
   <div class="social-hub">
     <div class="hub-header">
       <h2>🔥 THE FORGE</h2>
-      <div style="font-size: 0.7rem; color: #bcd0f0;">join the leader movement</div>
+      <div class="sub">join the leader movement</div>
     </div>
     <div class="social-grid">
+      <!-- Instagram - ONE TIME -->
       <a href="https://www.instagram.com/restgenmgr" class="social-card" target="_blank" rel="noopener noreferrer">
         <div class="social-icon-sm" style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);"><i class="fab fa-instagram" style="color:white;"></i></div>
         <div class="social-info-sm"><h3>Instagram</h3><p>@restgenmgr</p></div>
       </a>
+      <!-- X (Twitter) - ONE TIME -->
       <a href="https://twitter.com/NAThomas1952" class="social-card" target="_blank" rel="noopener noreferrer">
         <div class="social-icon-sm" style="background: #000;"><i class="fab fa-x-twitter" style="color:white;"></i></div>
         <div class="social-info-sm"><h3>X (Twitter)</h3><p>@NAThomas1952</p></div>
       </a>
+      <!-- LinkedIn - ONE TIME -->
       <a href="https://www.linkedin.com/in/nathomas-hospitality" class="social-card" target="_blank" rel="noopener noreferrer">
         <div class="social-icon-sm" style="background: #0077b5;"><i class="fab fa-linkedin-in" style="color:white;"></i></div>
         <div class="social-info-sm"><h3>LinkedIn</h3><p>Nigel Thomas</p></div>
       </a>
-       <!-- SOCIAL LINKS HUB - CORRECTED YOUTUBE LINK -->
-  <div class="social-hub">
-    <div class="hub-header">
-      <h2>🔥 THE FORGE</h2>
-      <div style="font-size: 0.7rem; color: #bcd0f0;">join the leader movement</div>
-    </div>
-    <div class="social-grid">
-      <a href="https://www.instagram.com/restgenmgr" class="social-card" target="_blank" rel="noopener noreferrer">
-        <div class="social-icon-sm" style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);"><i class="fab fa-instagram" style="color:white;"></i></div>
-        <div class="social-info-sm"><h3>Instagram</h3><p>@restgenmgr</p></div>
-      </a>
-      <a href="https://twitter.com/NAThomas1952" class="social-card" target="_blank" rel="noopener noreferrer">
-        <div class="social-icon-sm" style="background: #000;"><i class="fab fa-x-twitter" style="color:white;"></i></div>
-        <div class="social-info-sm"><h3>X (Twitter)</h3><p>@NAThomas1952</p></div>
-      </a>
-      <a href="https://www.linkedin.com/in/nathomas-hospitality" class="social-card" target="_blank" rel="noopener noreferrer">
-        <div class="social-icon-sm" style="background: #0077b5;"><i class="fab fa-linkedin-in" style="color:white;"></i></div>
-        <div class="social-info-sm"><h3>LinkedIn</h3><p>Nigel Thomas</p></div>
-      </a>
-      <!-- YOUTUBE - FIXED LINK -->
+      <!-- YouTube - ONE TIME (FIXED) -->
       <a href="https://www.youtube.com/@NigelThomas-u1u8w" class="social-card" target="_blank" rel="noopener noreferrer">
         <div class="social-icon-sm" style="background: #ff0000;"><i class="fab fa-youtube" style="color:white;"></i></div>
         <div class="social-info-sm"><h3>YouTube</h3><p>@NigelThomas</p></div>
       </a>
+      <!-- TikTok - ONE TIME -->
       <a href="https://www.tiktok.com/@restgenmgr" class="social-card" target="_blank" rel="noopener noreferrer">
         <div class="social-icon-sm" style="background: #010101;"><i class="fab fa-tiktok" style="color:white;"></i></div>
         <div class="social-info-sm"><h3>TikTok</h3><p>@restgenmgr</p></div>
       </a>
-      <a href="https://www.facebook.com/FoodBeverageMgr" class="social-card" target="_blank" rel="noopener noreferrer">
-        <div class="social-icon-sm" style="background: #4267B2;"><i class="fab fa-facebook-f" style="color:white;"></i></div>
-        <div class="social-info-sm"><h3>Facebook</h3><p>FoodBeverageMgr</p></div>
-      </a>
-    </div>
-    <div class="hashtag">#TheMakingOfALeader • #ElevateYourCareer • #JobLynk</div>
-  </div>
-      </a>
-      <a href="https://www.tiktok.com/@restgenmgr" class="social-card" target="_blank" rel="noopener noreferrer">
-        <div class="social-icon-sm" style="background: #010101;"><i class="fab fa-tiktok" style="color:white;"></i></div>
-        <div class="social-info-sm"><h3>TikTok</h3><p>@restgenmgr</p></div>
-      </a>
+      <!-- Facebook - ONE TIME -->
       <a href="https://www.facebook.com/FoodBeverageMgr" class="social-card" target="_blank" rel="noopener noreferrer">
         <div class="social-icon-sm" style="background: #4267B2;"><i class="fab fa-facebook-f" style="color:white;"></i></div>
         <div class="social-info-sm"><h3>Facebook</h3><p>FoodBeverageMgr</p></div>
@@ -443,7 +426,7 @@
 
   <div class="footer">
     <p>© 2024 JobLynk.live — Executive Digital Resources for Indian Professionals</p>
-    <p style="margin-top: 5px;">📍 Chennai • India | Your Vote — Your Right | #TheMakingOfALeader</p>
+    <p style="margin-top: 5px;">📍 Chennai • India | Your Vote — Your Right</p>
   </div>
 </div>
 
