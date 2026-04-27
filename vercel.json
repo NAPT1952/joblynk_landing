@@ -1,4 +1,10 @@
 {
-  "cleanUrls": false,
-  "trailingSlash": false
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
+    { "src": "/sitemap_index.xml", "dest": "/sitemap_index.xml" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/leader.html", "dest": "/leader.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
