@@ -1,0 +1,40 @@
+$employerKey = @'
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employer Verification - JobLynk.live</title>
+    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "JobLynk.live",
+        "url": "https://joblynk.live",
+        "logo": "https://joblynk.live/images/logo.png",
+        "description": "Executive digital resources for hospitality and maritime careers",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+            "@type": "Organization",
+            "name": "JobLynk.live",
+            "sameAs": "https://joblynk.live"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+919769351231",
+            "contactType": "Employer Relations",
+            "email": "nigelthomas@hotmail.com"
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>Employer Verification - JobLynk.live</h1>
+    <p>This page verifies JobLynk.live as an employer partner with major job platforms.</p>
+    <p>For employer inquiries, contact: <a href="mailto:nigelthomas@hotmail.com">nigelthomas@hotmail.com</a></p>
+</body>
+</html>
+'@
+
+$employerKey | Out-File -FilePath "C:\Users\admin\Desktop\joblynklive\employer-key.html" -Encoding UTF8
+Write-Host "✅ Employer key page (employer-key.html) created" -ForegroundColor Green
