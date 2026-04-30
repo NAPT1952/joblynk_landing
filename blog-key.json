@@ -1,26 +1,30 @@
 ﻿{
     "blog": {
         "name": "JobLynk.live Career Blog",
-        "description": "Career insights, job search tips, and industry guides for hospitality and maritime professionals",
-        "keywords": [
-            "career advice",
-            "job search tips",
-            "hospitality careers",
-            "maritime jobs",
-            "resume writing",
-            "interview tips"
-        ],
+        "description": "20+ career insights, job search tips, and industry guides",
+        "totalArticles": 20,
+        "keywords": ["career advice", "job search", "hospitality", "maritime", "tech careers", "non-tech careers"],
         "articles": [
-            {"id": 1, "title": "Blog Article 1", "url": "/blog/blog1.html"},
-            {"id": 2, "title": "Blog Article 2", "url": "/blog/blog2.html"},
-            {"id": 3, "title": "Blog Article 3", "url": "/blog/blog3.html"},
-            {"id": 4, "title": "Blog Article 4", "url": "/blog/blog4.html"},
-            {"id": 5, "title": "Blog Article 5", "url": "/blog/blog5.html"},
-            {"id": 6, "title": "Blog Article 6", "url": "/blog/blog6.html"},
-            {"id": 7, "title": "Blog Article 7", "url": "/blog/blog7.html"},
-            {"id": 8, "title": "Blog Article 8", "url": "/blog/blog8.html"},
-            {"id": 9, "title": "Blog Article 9", "url": "/blog/blog9.html"},
-            {"id": 10, "title": "Blog Article 10", "url": "/blog/blog10.html"}
+            {"id": 1, "title": "Customer Service Jobs Guide", "url": "/blog/blog1.html", "category": "Non-Tech"},
+            {"id": 2, "title": "How to Write a Winning Resume", "url": "/blog/blog2.html", "category": "Career Tips"},
+            {"id": 3, "title": "Hospitality Management Careers", "url": "/blog/blog3.html", "category": "Hospitality"},
+            {"id": 4, "title": "Maritime Industry Jobs", "url": "/blog/blog4.html", "category": "Maritime"},
+            {"id": 5, "title": "Interview Preparation Tips", "url": "/blog/blog5.html", "category": "Career Tips"},
+            {"id": 6, "title": "Cruise Line Jobs for Indians", "url": "/blog/blog6.html", "category": "Maritime"},
+            {"id": 7, "title": "Culinary Arts Career Path", "url": "/blog/blog7.html", "category": "Hospitality"},
+            {"id": 8, "title": "Hotel Front Office Excellence", "url": "/blog/blog8.html", "category": "Hospitality"},
+            {"id": 9, "title": "Housekeeping Management", "url": "/blog/blog9.html", "category": "Hospitality"},
+            {"id": 10, "title": "F&B Management Careers", "url": "/blog/blog10.html", "category": "Hospitality"},
+            {"id": 11, "title": "Tech Careers in Hospitality", "url": "/blog/blog11.html", "category": "Tech"},
+            {"id": 12, "title": "HR & Training in Hospitality", "url": "/blog/blog12.html", "category": "Non-Tech"},
+            {"id": 13, "title": "Revenue Management Guide", "url": "/blog/blog13.html", "category": "Non-Tech"},
+            {"id": 14, "title": "Wellness & Spa Careers", "url": "/blog/blog14.html", "category": "Hospitality"},
+            {"id": 15, "title": "Retail & Casino Jobs", "url": "/blog/blog15.html", "category": "Hospitality"},
+            {"id": 16, "title": "Engineering & Maintenance Tech", "url": "/blog/blog16.html", "category": "Tech"},
+            {"id": 17, "title": "Maritime Deck Department", "url": "/blog/blog17.html", "category": "Maritime"},
+            {"id": 18, "title": "Maritime Engine Department", "url": "/blog/blog18.html", "category": "Maritime"},
+            {"id": 19, "title": "Middle East Hospitality Jobs", "url": "/blog/blog19.html", "category": "International"},
+            {"id": 20, "title": "Luxury Hotels Career Guide", "url": "/blog/blog20.html", "category": "Hospitality"}
         ]
     }
 }

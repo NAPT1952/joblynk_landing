@@ -1,23 +1,17 @@
-cd C:\Users\admin\Desktop\joblynklive
-
-$blogMainPage = @'
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobLynk.live – Career Insights Blog</title>
-    <meta name="description" content="Career insights, job search tips, and industry guides for hospitality and maritime professionals.">
-    <meta name="keywords" content="career blog, job tips, hospitality careers, maritime jobs, resume advice">
-    <meta name="author" content="JobLynk.live">
-    <meta name="robots" content="index, follow">
-    <meta name="google-adsense-account" content="ca-pub-4282121192943910">
+    <title>JobLynk.live – Career Insights Blog | 20+ Articles</title>
+    <meta name="description" content="Career insights, job search tips, and industry guides for hospitality and maritime professionals. 20+ articles on tech and non-tech careers.">
+    <meta name="keywords" content="career blog, job tips, hospitality careers, maritime jobs, resume advice, interview tips, tech careers">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LDB7E245Y"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9LDB7E245Y');</script>
     <style>
         *{margin:0;padding:0;box-sizing:border-box;}
-        body{background:#f0f4f8;font-family:'Segoe UI',Arial,sans-serif;color:#1a2a3a;line-height:1.6;}
-        .navbar{background:#0f2b3d;padding:1rem 0;position:sticky;top:0;z-index:1000;}
+        body{background:#f0f4f8;font-family:'Segoe UI',Arial,sans-serif;}
+        .navbar{background:#0f2b3d;padding:1rem 0;position:sticky;top:0;}
         .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;flex-wrap:wrap;}
         .logo{color:white;font-size:1.5rem;font-weight:bold;text-decoration:none;}
         .nav-links{display:flex;gap:1rem;flex-wrap:wrap;}
@@ -25,16 +19,14 @@ $blogMainPage = @'
         .nav-links a:hover,.nav-links a.active{background:#2c7da0;}
         .header{background:linear-gradient(135deg,#0f2b3d,#1e4a6e);color:white;padding:2rem;text-align:center;}
         .header h1{font-size:2rem;}
-        .container{max-width:1100px;margin:2rem auto;padding:0 20px;}
-        .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem;margin:2rem 0;}
-        .blog-card{background:white;border-radius:1rem;padding:1.5rem;box-shadow:0 4px 12px rgba(0,0,0,0.05);transition:transform 0.2s;}
+        .container{max-width:1200px;margin:2rem auto;padding:0 20px;}
+        .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem;}
+        .blog-card{background:white;border-radius:1rem;padding:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:transform 0.2s;}
         .blog-card:hover{transform:translateY(-5px);}
         .blog-card h3{margin-bottom:0.5rem;}
         .blog-card h3 a{color:#0f2b3d;text-decoration:none;}
-        .blog-card h3 a:hover{color:#1e4a6e;}
-        .date{color:#7f8c8d;font-size:0.8rem;margin-bottom:0.5rem;}
-        .excerpt{color:#555;margin:0.5rem 0;}
-        .read-more{color:#2c7da0;text-decoration:none;font-weight:bold;}
+        .blog-card h3 a:hover{color:#2c7da0;}
+        .category{display:inline-block;background:#e0e7ef;padding:3px 10px;border-radius:20px;font-size:0.7rem;margin-top:0.5rem;}
         .footer{background:#0f1a24;color:#8899aa;text-align:center;padding:2rem;margin-top:2rem;}
         .footer a{color:#8899aa;margin:0 0.5rem;text-decoration:none;}
         @media(max-width:768px){.nav-container{flex-direction:column;gap:10px;}}
@@ -42,23 +34,29 @@ $blogMainPage = @'
 </head>
 <body>
 <nav class="navbar"><div class="nav-container"><a href="/" class="logo">JobLynk.live</a><div class="nav-links"><a href="/">Home</a><a href="/about.html">About</a><a href="/blog.html" class="active">Blog</a><a href="/employer.html">Employer</a><a href="/contact.html">Contact</a></div></div></nav>
-<div class="header"><h1>📝 Career Insights Blog</h1><p>Tips, guides, and industry news for professionals</p></div>
+<div class="header"><h1>📝 Career Insights Blog</h1><p>20+ articles on career growth, job search, and industry insights</p></div>
 <div class="container"><div class="blog-grid">
-<div class="blog-card"><div class="date">April 2026</div><h3><a href="/blog/blog1.html">Blog Article 1</a></h3><div class="excerpt">Read our latest insights and career advice.</div><a href="/blog/blog1.html" class="read-more">Read More →</a></div>
-<div class="blog-card"><div class="date">April 2026</div><h3><a href="/blog/blog2.html">Blog Article 2</a></h3><div class="excerpt">Read our latest insights and career advice.</div><a href="/blog/blog2.html" class="read-more">Read More →</a></div>
-<div class="blog-card"><div class="date">April 2026</div><h3><a href="/blog/blog3.html">Blog Article 3</a></h3><div class="excerpt">Read our latest insights and career advice.</div><a href="/blog/blog3.html" class="read-more">Read More →</a></div>
-<div class="blog-card"><div class="date">April 2026</div><h3><a href="/blog/blog4.html">Blog Article 4</a></h3><div class="excerpt">Read our latest insights and career advice.</div><a href="/blog/blog4.html" class="read-more">Read More →</a></div>
-<div class="blog-card"><div class="date">April 2026</div><h3><a href="/blog/blog5.html">Blog Article 5</a></h3><div class="excerpt">Read our latest insights and career advice.</div><a href="/blog/blog5.html" class="read-more">Read More →</a></div>
-<div class="blog-card"><div class="date">April 2026</div><h3><a href="/blog/blog6.html">Blog Article 6</a></h3><div class="excerpt">Read our latest insights and career advice.</div><a href="/blog/blog6.html" class="read-more">Read More →</a></div>
-<div class="blog-card"><div class="date">April 2026</div><h3><a href="/blog/blog7.html">Blog Article 7</a></h3><div class="excerpt">Read our latest insights and career advice.</div><a href="/blog/blog7.html" class="read-more">Read More →</a></div>
-<div class="blog-card"><div class="date">April 2026</div><h3><a href="/blog/blog8.html">Blog Article 8</a></h3><div class="excerpt">Read our latest insights and career advice.</div><a href="/blog/blog8.html" class="read-more">Read More →</a></div>
-<div class="blog-card"><div class="date">April 2026</div><h3><a href="/blog/blog9.html">Blog Article 9</a></h3><div class="excerpt">Read our latest insights and career advice.</div><a href="/blog/blog9.html" class="read-more">Read More →</a></div>
-<div class="blog-card"><div class="date">April 2026</div><h3><a href="/blog/blog10.html">Blog Article 10</a></h3><div class="excerpt">Read our latest insights and career advice.</div><a href="/blog/blog10.html" class="read-more">Read More →</a></div>
+<div class="blog-card"><h3><a href="/blog/blog1.html">Customer Service Jobs: Complete Guide</a></h3><p>Skills, salary, and where to apply for customer service roles.</p><div class="category">Non-Tech</div></div>
+<div class="blog-card"><h3><a href="/blog/blog2.html">How to Write a Winning Resume</a></h3><p>Tips and templates for creating a resume that gets interviews.</p><div class="category">Career Tips</div></div>
+<div class="blog-card"><h3><a href="/blog/blog3.html">Hospitality Management Careers</a></h3><p>Hotel management roles, salaries, and top recruiters.</p><div class="category">Hospitality</div></div>
+<div class="blog-card"><h3><a href="/blog/blog4.html">Maritime Industry Jobs Guide</a></h3><p>Complete guide to deck, engine, and cruise line careers.</p><div class="category">Maritime</div></div>
+<div class="blog-card"><h3><a href="/blog/blog5.html">Interview Preparation Tips</a></h3><p>Common questions and how to answer them confidently.</p><div class="category">Career Tips</div></div>
+<div class="blog-card"><h3><a href="/blog/blog6.html">Cruise Line Jobs for Indians</a></h3><p>Requirements, certifications, and application process.</p><div class="category">Maritime</div></div>
+<div class="blog-card"><h3><a href="/blog/blog7.html">Culinary Arts Career Path</a></h3><p>From commis to executive chef – salary progression.</p><div class="category">Hospitality</div></div>
+<div class="blog-card"><h3><a href="/blog/blog8.html">Hotel Front Office Excellence</a></h3><p>Guest relations, reservations, and management tips.</p><div class="category">Hospitality</div></div>
+<div class="blog-card"><h3><a href="/blog/blog9.html">Housekeeping Management Guide</a></h3><p>Standards, KPIs, and career progression in housekeeping.</p><div class="category">Hospitality</div></div>
+<div class="blog-card"><h3><a href="/blog/blog10.html">F&B Management Careers</a></h3><p>Restaurant, QSR, and cloud kitchen opportunities.</p><div class="category">Hospitality</div></div>
+<div class="blog-card"><h3><a href="/blog/blog11.html">Tech Careers in Hospitality</a></h3><p>IT roles, PMS systems, and digital transformation in hotels.</p><div class="category">Tech</div></div>
+<div class="blog-card"><h3><a href="/blog/blog12.html">HR & Training in Hospitality</a></h3><p>Recruitment, compliance, and employee development.</p><div class="category">Non-Tech</div></div>
+<div class="blog-card"><h3><a href="/blog/blog13.html">Revenue Management Guide</a></h3><p>Hotel revenue strategies, pricing, and analytics.</p><div class="category">Non-Tech</div></div>
+<div class="blog-card"><h3><a href="/blog/blog14.html">Wellness & Spa Careers</a></h3><p>Spa management, therapist roles, and luxury hotel standards.</p><div class="category">Hospitality</div></div>
+<div class="blog-card"><h3><a href="/blog/blog15.html">Retail & Casino Jobs in Hotels</a></h3><p>Duty-free, retail management, and casino operations.</p><div class="category">Hospitality</div></div>
+<div class="blog-card"><h3><a href="/blog/blog16.html">Engineering & Maintenance Tech</a></h3><p>HVAC, electrical, and facility management careers.</p><div class="category">Tech</div></div>
+<div class="blog-card"><h3><a href="/blog/blog17.html">Maritime Deck Department Guide</a></h3><p>Deck officers, ratings, certifications, and salaries.</p><div class="category">Maritime</div></div>
+<div class="blog-card"><h3><a href="/blog/blog18.html">Maritime Engine Department Guide</a></h3><p>Marine engineers, engine ratings, and career path.</p><div class="category">Maritime</div></div>
+<div class="blog-card"><h3><a href="/blog/blog19.html">Middle East Hospitality Jobs</a></h3><p>Dubai, Qatar, Saudi career opportunities for Indians.</p><div class="category">International</div></div>
+<div class="blog-card"><h3><a href="/blog/blog20.html">Luxury Hotels Career Guide</a></h3><p>Top hotel chains, salaries, and career paths in India.</p><div class="category">Hospitality</div></div>
 </div></div>
-<div class="footer"><p>© 2026 JobLynk.live – Bridging Jobs & Talent</p><p><a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a> | <a href="/contact.html">Contact</a> | <a href="/blog.html">Blog</a> | <a href="/employer.html">Employer</a></p></div>
+<div class="footer"><p>© 2026 JobLynk.live – Career Blog | <a href="/blog.html">Blog</a> | <a href="/employer.html">Employer</a> | <a href="/contact.html">Contact</a></p></div>
 </body>
 </html>
-'@
-
-$blogMainPage | Out-File -FilePath "C:\Users\admin\Desktop\joblynklive\blog.html" -Encoding UTF8
-Write-Host "✅ Main blog page (blog.html) created with links to all 10 articles" -ForegroundColor Green
