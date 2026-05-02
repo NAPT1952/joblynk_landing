@@ -1,110 +1,29 @@
-<!-- FORM -->
-<div class="card">
- 
-<h2>Submit Job Details</h2>
-
-<p>
-Fill the form below and your vacancy will be reviewed and published within 24 hours.
-</p>
-
-<form id="jobForm" action="https://formsubmit.co/joblynklive@gmail.com" method="POST">
-
-    <!-- SETTINGS -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <input type="hidden" name="_subject" value="New Employer Job Posting - JobLynk.live">
-
-    <input type="hidden" name="_template" value="table">
-
-    <!-- NAME -->
-    <div class="form-group">
-        <label>Full Name *</label>
-        <input type="text" name="Full Name" required>
-    </div>
-
-    <!-- EMAIL -->
-    <div class="form-group">
-        <label>Email Address *</label>
-        <input type="email" name="Email" required>
-    </div>
-
-    <!-- PHONE -->
-    <div class="form-group">
-        <label>Phone Number *</label>
-        <input type="tel" name="Phone" required>
-    </div>
-
-    <!-- LOCATION -->
-    <div class="form-group">
-        <label>Job Location *</label>
-        <input type="text" name="Location" required>
-    </div>
-
-    <!-- JOB TITLE -->
-    <div class="form-group">
-        <label>Job Title *</label>
-        <input type="text" name="Job Title" required>
-    </div>
-
-    <!-- OPENINGS -->
-    <div class="form-group">
-        <label>Number of Openings *</label>
-        <input type="number" name="Openings" required>
-    </div>
-
-    <!-- SALARY -->
-    <div class="form-group">
-        <label>Salary *</label>
-        <input type="text" name="Salary" required>
-    </div>
-
-    <!-- DESCRIPTION -->
-    <div class="form-group">
-        <label>Job Description *</label>
-        <textarea name="Job Description" rows="6" required></textarea>
-    </div>
-
-    <!-- BUTTON -->
-    <button type="submit">Submit Job Posting</button>
-
-</form>
-
-<!-- SUCCESS MESSAGE -->
-<div id="successMessage" style="display:none;margin-top:20px;padding:15px;background:#d4edda;color:#155724;border-radius:10px;">
-✅ Your job posting has been submitted successfully.
+<!-- START EMPLOYER BENEFITS SECTION -->
+<div class="card" style="margin-bottom:30px;">
+    <h1>Post Your Job Vacancies Free on JobLynk.live</h1>
+    
+    <h2>Why Cruise Lines, Hotels, and Maritime Companies Trust JobLynk.live</h2>
+    
+    <p>Hiring for hospitality and maritime roles is expensive and time-consuming. Agencies charge 15-30% of annual salary per hire. Job boards charge Rs.5,000 to Rs.20,000 per listing with no guarantee of quality. JobLynk.live solves this. We connect you directly with job-ready, pre-screened candidates at zero cost to you.</p>
+    
+    <h3>100% Free for Employers. No Hidden Charges.</h3>
+    <p>Post unlimited job vacancies for cruise ships, 5-star hotels, resorts, restaurants, and offshore roles without paying listing fees, success fees, or commissions. Your budget stays focused on operations and crew welfare, not recruitment middlemen. We make revenue from candidate career packages only. You never pay us.</p>
+    
+    <h3>Reach Candidates Who Are Actually Ready</h3>
+    <p>Unlike generic job portals, every candidate on JobLynk.live completes our Career Readiness Audit. This means they understand contract terms, STCW requirements, visa processes, and salary expectations before they apply. You receive applications from people who know what a 9-month cruise contract means, what MLC 2006 covers, and what documents they need for a C1/D visa. This cuts your screening time by 70%.</p>
+    
+    <h3>Direct Applications to Your Email or WhatsApp</h3>
+    <p>We do not sit between you and the candidate. When you post a job, applications with resumes and contact details come straight to your inbox or phone. You control the interview process, timeline, and final selection. No recruiter will call you asking for a fee to release a candidate’s CV.</p>
+    
+    <h3>Fast Publishing and India-Wide Reach</h3>
+    <p>Submit your vacancy using the form below. Our team reviews it for clarity and compliance within 24 hours, then publishes it across our network. Your opening reaches candidates in Mumbai, Goa, Kochi, Kolkata, and other major maritime hubs. We promote roles on WhatsApp groups, Telegram channels, and our website visited by active job seekers daily.</p>
+    
+    <h3>What Roles Can You Post?</h3>
+    <p>Cruise ship jobs: Housekeeping, F&B Service, Galley, Deck, Engine, Entertainment, Retail, Spa, Medical. Hotel jobs: Front Office, Culinary, F&B, Housekeeping, Engineering. Maritime: Offshore catering, oil rig hospitality, yacht crew. If it requires hospitality or maritime skills, you can post it free.</p>
+    
+    <h3>Our Commitment to Ethical Hiring</h3>
+    <p>JobLynk.live is a career performance platform, not a recruitment agency. We do not charge candidates for job placement. We do not charge employers for listings. Our goal is to reduce fraud in cruise and hotel hiring by educating candidates and giving employers direct access. We verify company details before publishing to protect job seekers from fake offers.</p>
+    
+    <p><strong>Ready to hire better, faster, and free?</strong> Fill the form below. Your next crew member is already preparing their documents.</p>
 </div>
-
-</div>
-
-<script>
-const form = document.getElementById("jobForm");
-
-form.addEventListener("submit", async function(e) {
-
-    e.preventDefault();
-
-    const formData = new FormData(form);
-
-    fetch("https://formsubmit.co/ajax/joblynklive@gmail.com", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-
-        document.getElementById("successMessage").style.display = "block";
-
-        form.reset();
-
-        window.scrollTo({
-            top: form.offsetTop,
-            behavior: "smooth"
-        });
-
-    })
-    .catch(error => {
-        alert("Error sending form. Please try again.");
-    });
-
-});
-</script>
+<!-- END EMPLOYER BENEFITS SECTION -->
