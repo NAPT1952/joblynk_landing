@@ -1,4 +1,3 @@
-$indexContent = @'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +6,8 @@ $indexContent = @'
 
     <title>JobLynk.live – Executive Digital Resources for Hospitality & Maritime Careers</title>
 
-    <meta name="description" content="JobLynk.live – Executive digital resources for Indian professionals in hospitality, cruise lines, maritime, and luxury hotels.">
-    <meta name="keywords" content="hospitality careers India, cruise line jobs, maritime careers, luxury hotels India">
+    <meta name="description" content="JobLynk.live – Executive digital resources for Indian professionals in hospitality, cruise lines, maritime, luxury hotels, and BPO careers.">
+    <meta name="keywords" content="hospitality careers India, cruise line jobs, maritime careers, luxury hotels India, BPO jobs, call center jobs">
     <meta name="author" content="JobLynk.live">
     <meta name="robots" content="index, follow">
 
@@ -42,7 +41,15 @@ $indexContent = @'
         .sector-card{background:white;border-radius:16px;padding:1.5rem;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.05);}
         .sector-card:hover{transform:translateY(-5px);}
         .sector-card a{text-decoration:none;font-weight:bold;color:#1e4a6e;font-size:1.2rem;display:block;}
+        .content-section{background:white;border-radius:16px;padding:2rem;margin:2rem 0;box-shadow:0 4px 12px rgba(0,0,0,0.05);}
+        .content-section h2{color:#0f2b3d;margin-bottom:1rem;border-bottom:3px solid #2c7da0;padding-bottom:0.5rem;}
+        .content-section h3{color:#1e4a6e;margin:1.5rem 0 0.5rem;}
+        .content-section ul{margin-left:1.5rem;margin-bottom:1rem;}
+        .content-section li{margin:0.5rem 0;}
         .footer{background:#0f1a24;color:#8899aa;text-align:center;padding:2rem;margin-top:2rem;}
+        .footer a{color:#8899aa;text-decoration:none;}
+        .footer a:hover{color:white;}
+        html{scroll-behavior:smooth;}
     </style>
 </head>
 
@@ -54,6 +61,7 @@ $indexContent = @'
         <a href="/" class="logo">JobLynk.live</a>
         <div class="nav-links">
             <a href="/">Home</a>
+            <a href="#bpo-jobs">BPO Jobs</a>
             <a href="/about.html">About</a>
             <a href="/blog.html">Blog</a>
             <a href="/employer.html">Employer</a>
@@ -87,23 +95,35 @@ $indexContent = @'
         <div class="sector-card"><a href="/maritime-deck.html">⚓ Deck</a></div>
         <div class="sector-card"><a href="/maritime-engine.html">⚙️ Engine</a></div>
     </div>
+
+    <!-- BPO JOBS SECTION -->
+    <div id="bpo-jobs" class="content-section">
+        <h2>📞 BPO / Call Center Jobs</h2>
+        <p>BPO jobs are one of the most popular non-technical career options, especially for freshers. They provide quick entry into the job market with fast hiring cycles.</p>
+        
+        <h3>Common Roles</h3>
+        <ul>
+            <li><strong>Customer Support Executive</strong> - Handle inbound calls and resolve customer queries</li>
+            <li><strong>Telecaller</strong> - Outbound sales and lead generation calls</li>
+            <li><strong>Voice Process Agent</strong> - International/domestic voice support</li>
+            <li><strong>Non-Voice Support</strong> - Email, chat, and back-office processes</li>
+        </ul>
+
+        <h3>Skills Required</h3>
+        <ul>
+            <li>Good communication skills in English + regional language</li>
+            <li>Active listening ability</li>
+            <li>Basic computer knowledge</li>
+            <li>Patience and problem-solving attitude</li>
+        </ul>
+
+        <h3>Why Choose BPO?</h3>
+        <p>BPO jobs offer flexible shifts, fast hiring within 1-7 days, and clear growth paths to Team Leader, Quality Analyst, and Operations Manager roles. Many MNCs hire freshers with just 12th pass or graduate qualifications.</p>
+
+        <h3>Where to Apply in Mumbai</h3>
+        <p>Top BPO companies: TCS, Wipro, Accenture, Concentrix, Tech Mahindra, Teleperformance. Also check outsourcing firms and customer service centers in Andheri, Malad, and Navi Mumbai.</p>
+    </div>
 </div>
 
 <!-- FOOTER -->
-<div class="footer">
-<p>
-© 2026 JobLynk.live |
-<a href="/">Home</a> |
-<a href="/blog.html">Blog</a> |
-<a href="/employer.html">Employer</a> |
-<a href="/contact.html">Contact</a> |
-<a href="/privacy.html">Privacy</a> |
-<a href="/disclaimer.html">Disclaimer</a>
-</p>
-</div>
-</body>
-</html>
-'@
-
-Set-Content -Path "index.html" -Value $indexContent -Encoding UTF8
-Write-Host "✅ index.html created. 100% Google + AdSense safe. Upload to GitHub now."
+<div class="footer
