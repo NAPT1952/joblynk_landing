@@ -1,9 +1,4 @@
-cd "C:\path\to\your\joblynk-repo"
-
-New-Item -Path "blog" -ItemType Directory -Force
-
-$blogContent = @'
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -103,9 +98,9 @@ $blogContent = @'
         </div>
         <h2>Expected Salary for Freshers in India 2026</h2>
         <ul>
-            <li><strong>Tier-1 cities:</strong> ₹4 – 7 LPA</li>
-            <li><strong>Tier-2 cities:</strong> ₹3 – 5 LPA</li>
-            <li><strong>Remote startups:</strong> ₹5 – 9 LPA</li>
+            <li><strong>Tier-1 cities:</strong> 4 – 7 LPA</li>
+            <li><strong>Tier-2 cities:</strong> 3 – 5 LPA</li>
+            <li><strong>Remote startups:</strong> 5 – 9 LPA</li>
             <li><strong>With SQL + Python:</strong> +30% vs Excel-only</li>
         </ul>
         <a href="/blog.html" class="back-link">← Back to Blog</a>
@@ -124,10 +119,3 @@ $blogContent = @'
 </div>
 </body>
 </html>
-'@
-
-$blogContent | Out-File -FilePath "blog/first-data-analyst-job-2026.html" -Encoding UTF8
-
-git add blog/first-data-analyst-job-2026.html
-git commit -m "Add First Data Analyst Job blog post"
-git push origin main
