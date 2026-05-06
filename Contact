@@ -185,6 +185,7 @@
       </span>
     </div>
   </footer>
+alert('JS loaded');
 
 </div>
 </body>
