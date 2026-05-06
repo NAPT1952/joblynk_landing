@@ -57,4 +57,149 @@
     .next p { color:#B8D1EC; line-height:1.8; }
 
     .footer { border-top:1px solid #1E3A4F; margin-top:40px; padding:30px 0 20px; }
-    .footer-grid { display:grid
+    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr; gap:2rem; margin-bottom:1.5rem; }
+    .footer-brand .logo { display:block; margin-bottom:.8rem; }
+    .footer-brand p { color:#8FB3D1; font-size:.9rem; max-width:300px; line-height:1.6; }
+    .fco { color:#8FB3D1; font-size:.9rem; margin-top:1rem; line-height:1.8; }
+    .fco a { color:#00FFC6; text-decoration:none; }
+    .footer-col h4 { font-size:.8rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:#00FFC6; margin-bottom:.9rem; }
+    .footer-col ul { list-style:none; }
+    .footer-col ul li { margin-bottom:.5rem; }
+    .footer-col ul li a { color:#8FB3D1; text-decoration:none; font-size:.9rem; }
+    .footer-col ul li a:hover { color:#00FFC6; }
+    .footer-bottom { border-top:1px solid #1E3A4F; padding-top:1.1rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; font-size:.85rem; color:#6C93B0; }
+    .footer-bottom a { color:#6C93B0; text-decoration:none; }
+    .footer-bottom a:hover { color:#00FFC6; }
+
+    @media(max-width:700px){
+      .contact-grid { grid-template-columns:1fr; }
+      .contact-card { padding:25px; }
+      .footer-grid { grid-template-columns:1fr; }
+      h1 { font-size:2rem; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a class="logo" href="/">Job<span>Lynk</span>.live</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/jobs.html">Jobs</a>
+      <a href="/education.html">Education</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/about.html">About</a>
+      <a href="/employer.html">Employer</a>
+      <a href="/contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <!-- CONTACT -->
+  <div class="contact-card">
+    <h1>Get in Touch</h1>
+    <div class="subhead">We’re here to help with hiring, jobs, or partnerships.</div>
+
+    <!-- WhatsApp CTA -->
+    <div class="cta">
+      <a href="https://wa.me/919769351231" target="_blank">💬 Chat on WhatsApp</a>
+    </div>
+
+    <div class="trust">
+      Trusted by employers & job seekers • Direct connection • No agents
+    </div>
+
+    <!-- JOB SEEKER LINE -->
+    <div class="job-line">
+      Looking for a job? 
+      <a href="https://wa.me/919769351231" target="_blank">Message us on WhatsApp and we’ll guide you.</a>
+    </div>
+
+    <!-- GRID -->
+    <div class="contact-grid">
+      <div class="contact-item">
+        <i class="fas fa-user-tie"></i>
+        <h3>Operations</h3>
+        <p><strong>Nigel Thomas</strong></p>
+        <p>📞 <a href="tel:+919769351231">+91 97693 51231</a></p>
+        <p>📧 <a href="mailto:restgenmgr1952@gmail.com">restgenmgr1952@gmail.com</a></p>
+        <a href="https://wa.me/919769351231" target="_blank">Message on WhatsApp →</a>
+        <div class="badge">Partnerships & Strategy</div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-headset"></i>
+        <h3>Support</h3>
+        <p><strong>Das</strong></p>
+        <p>📞 <a href="tel:+918369372112">+91 83693 72112</a></p>
+        <p>📧 <a href="mailto:joblynklive@gmail.com">joblynklive@gmail.com</a></p>
+        <a href="https://wa.me/918369372112" target="_blank">Message on WhatsApp →</a>
+        <div class="badge">Technical & Account Help</div>
+      </div>
+    </div>
+
+    <!-- WHAT NEXT -->
+    <div class="next">
+      <h3>What happens next?</h3>
+      <p>✔ We respond within 24 hours<br>
+         ✔ Understand your requirement<br>
+         ✔ Connect you directly (no middlemen)</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/">Job<span>Lynk</span>.live</a>
+        <p>Executive digital resources for Indian professionals in hospitality, cruise lines, maritime, and BPO careers.</p>
+        <div class="fco">
+          📧 <a href="mailto:joblynklive@gmail.com">joblynklive@gmail.com</a><br>
+          📱 <a href="https://wa.me/919769351231">WhatsApp: +91 97693 51231</a>
+        </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/jobs.html">Live Jobs</a></li>
+          <li><a href="/education.html">Education</a></li>
+          <li><a href="/blog.html">Career Blog</a></li>
+          <li><a href="/employer.html">For Employers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    <div class="footer-bottom">
+      <span>© 2026 JobLynk.live – All rights reserved.</span>
+      <span>
+        <a href="/">Home</a> &nbsp;|&nbsp; 
+        <a href="/sitemap.xml">Sitemap</a>
+      </span>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  console.log('JS loaded successfully');
+  
+  // Track WhatsApp clicks
+  document.querySelectorAll('a[href^="https://wa.me"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if(typeof gtag === 'function') gtag('event', 'whatsapp_click', {
+        event_category: 'contact',
+        event_label: btn.textContent.trim()
+      });
+    });
+  });
+</script>
+</body>
+</html>
