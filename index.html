@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,8 +45,8 @@
     .ham{display:none;cursor:pointer;flex-direction:column;gap:5px;background:none;border:none;padding:4px;}
     .ham span{width:24px;height:2px;background:var(--cream);border-radius:2px;}
     .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 5% 60px;position:relative;overflow:hidden;}
-    .hbg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 30%,rgba(201,168,76,.07) 0%,transparent 70%),linear-gradient(165deg,#0a1628 0%,#112240 50%,#0a1628 100%);}
-    .hgrid{position:absolute;inset:0;opacity:.03;background-image:linear-gradient(var(--gold) 1px,transparent 1px),linear-gradient(90deg,var(--gold) 1px,transparent 1px);background-size:48px 48px;}
+    .hbg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 30%,rgba(201,168,76,.07) 0%,transparent 70%),linear-gradient(165deg,#0a1628 0%,#112240 50%,#0a1628 100%);pointer-events:none;}
+    .hgrid{position:absolute;inset:0;opacity:.03;background-image:linear-gradient(var(--gold) 1px,transparent 1px),linear-gradient(90deg,var(--gold) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;}
     .hc{position:relative;z-index:1;max-width:840px;}
     .badge{display:inline-block;margin-bottom:1.6rem;background:rgba(201,168,76,.12);border:1px solid var(--border);padding:7px 20px;border-radius:50px;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold2);animation:fd .6s ease both;}
     h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,6vw,4.2rem);font-weight:700;line-height:1.12;color:var(--white);margin-bottom:1.4rem;animation:fu .7s .15s ease both;}
@@ -184,7 +183,7 @@
 <a class="skip" href="#main">Skip to main content</a>
 <nav role="navigation" aria-label="Main navigation">
   <a class="logo" href="/" aria-label="JobLynk.live Home">Job<span>Lynk</span>.live</a>
-  <button class="ham" aria-label="Toggle menu" aria-expanded="false" id="ham"><span></span><span></span><span></span></button>
+  <button class="ham" aria-label="Toggle menu" aria-expanded="false" id="ham"><span></span><span></span></button>
   <ul class="nav-links" id="navlinks" role="list">
     <li><a href="/">Home</a></li>
     <li><a href="/jobs.html" class="nav-new">🆕 Jobs</a></li>
@@ -245,100 +244,4 @@
       <div class="jc reveal"><span class="jtag">Luxury Hotels</span><span class="jtitle">Front Office Executive – 5-Star Hotel Mumbai</span><div class="jmeta"><span>📍 <strong>Mumbai, India</strong></span><span>🕐 <strong>Full Time</strong></span></div><span class="jsal">💰 ₹3.5–5.5 LPA</span><a class="japp" href="https://wa.me/919769351231?text=I%20want%20to%20apply%20for%20Front%20Office%20Executive%20Mumbai" target="_blank">📲 Apply on WhatsApp</a></div>
       <div class="jc reveal"><span class="jtag">Middle East</span><span class="jtitle">F&amp;B Supervisor – Luxury Resort Dubai</span><div class="jmeta"><span>📍 <strong>Dubai, UAE</strong></span><span>🕐 <strong>Full Time</strong></span></div><span class="jsal">💰 AED 4,000–6,000/month</span><a class="japp" href="https://wa.me/919769351231?text=I%20want%20to%20apply%20for%20FB%20Supervisor%20Dubai" target="_blank">📲 Apply on WhatsApp</a></div>
       <div class="jc reveal"><span class="jtag">BPO</span><span class="jtitle">Customer Support Executive – MNC BPO Mumbai</span><div class="jmeta"><span>📍 <strong>Andheri / Malad</strong></span><span>🕐 <strong>Full Time</strong></span></div><span class="jsal">💰 ₹2–4 LPA + incentives</span><a class="japp" href="https://wa.me/919769351231?text=I%20want%20to%20apply%20for%20BPO%20Customer%20Support%20job" target="_blank">📲 Apply on WhatsApp</a></div>
-      <div class="jc reveal"><span class="jtag">Maritime</span><span class="jtitle">Deck Officer – Merchant Navy India</span><div class="jmeta"><span>📍 <strong>International Waters</strong></span><span>🕐 <strong>Contract</strong></span></div><span class="jsal">💰 USD 2,500–4,500/month</span><a class="japp" href="https://wa.me/919769351231?text=I%20want%20to%20apply%20for%20Deck%20Officer%20Maritime%20job" target="_blank">📲 Apply on WhatsApp</a></div>
-      <div class="jc reveal"><span class="jtag">Culinary</span><span class="jtitle">Commis Chef – 5-Star Hotel Bangalore</span><div class="jmeta"><span>📍 <strong>Bangalore, India</strong></span><span>🕐 <strong>Full Time</strong></span></div><span class="jsal">💰 ₹2.5–4 LPA</span><a class="japp" href="https://wa.me/919769351231?text=I%20want%20to%20apply%20for%20Commis%20Chef%20Bangalore" target="_blank">📲 Apply on WhatsApp</a></div>
-    </div>
-    <div class="jcta reveal"><a href="/jobs.html" class="btn-og">View All Job Listings →</a></div>
-  </div>
-</section>
-<div class="ad-b"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4282121192943910" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
-<section class="education" id="education" aria-label="Education resources">
-  <div class="inner">
-    <div class="reveal"><p class="slabel">🎓 Education Hub</p><h2 class="stitle">Courses, Colleges &amp; <em>Certifications</em></h2><p class="sdesc">Everything you need to qualify, certify, and get ahead in hospitality, cruise, maritime and BPO careers.</p></div>
-    <div class="eg">
-      <a class="ec reveal" href="/education.html#hotel-management"><span class="ei">🏫</span><h3>Hotel Management Colleges India</h3><p>IHM Mumbai, Chennai, Delhi and top private colleges. Fees, courses, placements.</p><span class="ebadge">India</span></a>
-      <a class="ec reveal" href="/education.html#stcw"><span class="ei">⚓</span><h3>STCW Certification Guide</h3><p>Basic safety training for cruise and maritime jobs. Where to do it, cost, validity.</p><span class="ebadge">Cruise &amp; Maritime</span></a>
-      <a class="ec reveal" href="/education.html#bpo-skills"><span class="ei">📞</span><h3>BPO &amp; Soft Skills Courses</h3><p>Communication, accent training and customer service courses for call center careers.</p><span class="ebadge">BPO</span></a>
-      <a class="ec reveal" href="/education.html#online-certs"><span class="ei">💻</span><h3>Online Certifications</h3><p>Coursera, edX and NCHMCT prep courses recognized by top hospitality employers.</p><span class="ebadge">Online</span></a>
-      <a class="ec reveal" href="/education.html#abroad"><span class="ei">🌏</span><h3>Study Abroad – Hospitality</h3><p>Switzerland, Australia, UK hospitality programs. Scholarships and visa guidance.</p><span class="ebadge">International</span></a>
-      <a class="ec reveal" href="/education.html"><span class="ei">📚</span><h3>Full Education Guide</h3><p>Browse all courses, colleges, certifications and scholarships in one place.</p><span class="ebadge">All Resources</span></a>
-    </div>
-  </div>
-</section>
-<section class="how" aria-label="How it works">
-  <div class="inner">
-    <div class="reveal"><p class="slabel">Simple Process</p><h2 class="stitle">How <em>JobLynk</em> Works</h2><p class="sdesc">From discovery to dream job in four clear steps.</p></div>
-    <div class="hs">
-      <div class="step reveal"><div class="snum">01</div><h3>Choose Your Sector</h3><p>Browse 14 executive verticals with curated career guides, salary data and industry insights.</p></div>
-      <div class="step reveal"><div class="snum">02</div><h3>Pick Your Package</h3><p>White ₹49 for resume and 20 contacts. Gold ₹99 for 20+ fresh employer leads every weekday.</p></div>
-      <div class="step reveal"><div class="snum">03</div><h3>WhatsApp Order</h3><p>Message us, make payment and receive your tailored resume and HR contacts within hours.</p></div>
-      <div class="step reveal"><div class="snum">04</div><h3>Get Hired</h3><p>Apply directly to verified employers with your professional resume and real contact data.</p></div>
-    </div>
-  </div>
-</section>
-<section class="packages" id="packages" aria-label="Career packages">
-  <div class="inner">
-    <div class="reveal" style="text-align:center"><p class="slabel">Career Packages</p><h2 class="stitle">Invest in Your <em>Next Role</em></h2><p class="sdesc" style="margin:.7rem auto 0">Professional tools at a fraction of agency costs.</p></div>
-    <div class="pg">
-      <div class="pkc reveal"><p class="pkname">White Package</p><div class="pkprice"><span>₹</span>49</div><div class="pkdiv"></div><ul class="pkf"><li>Tailored Resume for your target role</li><li>Professional Cover Letter</li><li>20+ Verified HR / Employer Contacts</li><li>Valid for 4 Weeks</li></ul><a href="https://wa.me/919769351231?text=I%20want%20White%20Package%20Rs.49" class="btn-wa">📲 Order on WhatsApp</a></div>
-      <div class="pkc ft reveal"><span class="pkbadge">Best Value</span><p class="pkname">Gold Package</p><div class="pkprice"><span>₹</span>99</div><div class="pkdiv"></div><ul class="pkf"><li>Everything in White Package</li><li>20+ NEW Employer Leads Every Day</li><li>5 Days of Fresh Data Mon–Fri</li><li>Exclusive hiring pipeline access</li></ul><a href="https://wa.me/919769351231?text=I%20want%20Gold%20Package%20Rs.99" class="btn-wa">📲 Order on WhatsApp</a></div>
-    </div>
-  </div>
-</section>
-<section class="bpo" id="bpo-jobs" aria-label="BPO jobs">
-  <div class="inner">
-    <div class="bpog">
-      <div class="bpor reveal">
-        <div class="bporole"><h4>Customer Support Executive</h4><p>Inbound calls and query resolution</p></div>
-        <div class="bporole"><h4>Telecaller</h4><p>Outbound sales and lead gen</p></div>
-        <div class="bporole"><h4>Voice Process Agent</h4><p>International and domestic voice</p></div>
-        <div class="bporole"><h4>Non-Voice Support</h4><p>Email, chat and back-office</p></div>
-        <div class="bporole"><h4>Quality Analyst</h4><p>Monitor calls and standards</p></div>
-        <div class="bporole"><h4>Operations Manager</h4><p>Senior growth-path role</p></div>
-      </div>
-      <div class="bpoi reveal"><p class="slabel">BPO / Call Center</p><h3>Fast-Track Entry Into India's Booming BPO Sector</h3><p>Hiring within 1–7 days. TCS, Wipro, Accenture, Concentrix, Teleperformance all recruit freshers. Hotspots: Andheri, Malad, Navi Mumbai.</p><span class="salbadge">💰 Freshers ₹2–4 LPA &nbsp;|&nbsp; Managers ₹8–12 LPA</span></div>
-    </div>
-  </div>
-</section>
-<section class="blog" aria-label="Latest blog posts">
-  <div class="inner">
-    <div class="reveal"><p class="slabel">Career Intelligence</p><h2 class="stitle">Latest <em>Guides &amp; Insights</em></h2></div>
-    <div class="blg">
-      <a class="blc reveal" href="/cruise-ship-housekeeping-salary-usd-inr.html"><div class="blcb"><span class="bltag">Cruise Jobs</span><h3>Cruise Ship Housekeeping Salary: USD to INR 2026</h3><p>Monthly pay, contracts, tips and rupee conversion for major cruise lines.</p><span class="blread">Read Guide →</span></div></a>
-      <a class="blc reveal" href="/cruise-ship-job-documents-checklist-2026.html"><div class="blcb"><span class="bltag">Cruise Jobs</span><h3>Cruise Ship Job Documents Checklist 2026</h3><p>STCW, medical tests, visas and all paperwork needed — India specific.</p><span class="blread">Read Guide →</span></div></a>
-      <a class="blc reveal" href="/interview-tips.html"><div class="blcb"><span class="bltag">Interview Prep</span><h3>Interview Tips That Get You Hired</h3><p>STAR method, HR secrets and answers to 50+ common questions.</p><span class="blread">Read Guide →</span></div></a>
-      <a class="blc reveal" href="/resume-writing.html"><div class="blcb"><span class="bltag">Job Search</span><h3>Resume Writing That Gets Interviews</h3><p>ATS-friendly templates and keywords for hospitality roles.</p><span class="blread">Read Guide →</span></div></a>
-      <a class="blc reveal" href="/ai-agents-2026.html"><div class="blcb"><span class="bltag">AI &amp; Tech</span><h3>AI Agents Will Replace These Hospitality Jobs in 2026</h3><p>Which roles are safe and how to upskill before automation hits.</p><span class="blread">Read Guide →</span></div></a>
-      <a class="blc reveal" href="/blog.html"><div class="blcb" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:130px"><span style="font-size:1.9rem;margin-bottom:.7rem">📚</span><h3 style="color:var(--gold)">View All Articles</h3><p>Career guides, salary benchmarks and industry insights for 2026.</p></div></a>
-    </div>
-  </div>
-</section>
-<div class="ad-b"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4282121192943910" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
-<section class="trust" aria-label="Trust signals">
-  <p class="slabel">Built by a Hospitality Executive</p>
-  <h2>Trusted by Professionals Across <em style="color:var(--gold)">India &amp; Beyond</em></h2>
-  <p>Founded by Nigel Thomas. Not an agency — a precision career toolkit built specifically for the industry.</p>
-  <div class="tl">
-    <span class="tt">🏨 5-Star Hotels</span><span class="tt">🚢 International Cruise Lines</span><span class="tt">🕌 Middle East Hospitality</span><span class="tt">⚓ Maritime &amp; Deck</span><span class="tt">📞 BPO &amp; Call Centers</span><span class="tt">🎓 Education &amp; Training</span><span class="tt">🌏 Abroad Placements</span>
-  </div>
-</section>
-</main>
-<footer role="contentinfo">
-  <div class="fg">
-    <div class="fbrand"><a class="logo" href="/">Job<span>Lynk</span>.live</a><p>Executive digital resources for Indian professionals in hospitality, cruise lines, maritime, and BPO careers.</p><div class="fco">📧 <a href="mailto:joblynklive@gmail.com">joblynklive@gmail.com</a><br>📱 <a href="https://wa.me/919769351231">+91 97693 51231</a></div></div>
-    <div class="fcol"><h4>Sectors</h4><ul><li><a href="/cruise-line-operations.html">Cruise Lines</a></li><li><a href="/luxury-hotels-india.html">Luxury Hotels</a></li><li><a href="/middle-east-hospitality.html">Middle East</a></li><li><a href="/maritime-deck.html">Maritime Deck</a></li><li><a href="/culinary-arts.html">Culinary Arts</a></li></ul></div>
-    <div class="fcol"><h4>Quick Links</h4><ul><li><a href="/jobs.html">🆕 Live Jobs</a></li><li><a href="/education.html">🎓 Education</a></li><li><a href="/blog.html">Career Blog</a></li><li><a href="/hotel-sop.html">Hotel SOP Manual</a></li><li><a href="/resume-writing.html">Resume Writing</a></li></ul></div>
-    <div class="fcol"><h4>Company</h4><ul><li><a href="/about.html">About Us</a></li><li><a href="/employer.html">For Employers</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/disclaimer.html">Disclaimer</a></li><li><a href="/terms.html">Terms of Use</a></li></ul></div>
-  </div>
-  <div class="fb"><span>© 2026 JobLynk.live — All rights reserved. Founded by Nigel Thomas.</span><span><a href="/sitemap.xml">Sitemap</a> &nbsp;|&nbsp; <a href="/privacy.html">Privacy</a></span></div>
-</footer>
-<a class="waf" href="https://wa.me/919769351231?text=Hi%20JobLynk%2C%20I%20need%20career%20help" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">💬</a>
-<script>
-  const h=document.getElementById('ham'),n=document.getElementById('navlinks');
-  h.addEventListener('click',()=>{const o=n.classList.toggle('open');h.setAttribute('aria-expanded',o);});
-  const obs=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target);}});},{threshold:0.1});
-  document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
-  document.querySelectorAll('.btn-wa,.btn-p,.japp').forEach(b=>{b.addEventListener('click',()=>{if(typeof gtag==='function')gtag('event','cta_click',{event_category:'engagement',event_label:b.textContent.trim()});});});
-</script>
-</body>
-</html>
+      <div class="jc reveal"><span class="jtag">Maritime</span><span class="jtitle">Deck Officer – Merchant Navy India</span><div class="jmeta"><span>📍 <strong>International Waters</strong></span><span>🕐 <strong>Contract</strong></span></div><span class="jsal">
