@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://nigelthomas.live/sitemap.xml
+Sitemap: https://joblynk.live/sitemap.xml
